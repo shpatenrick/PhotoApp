@@ -1,5 +1,5 @@
 var Album = (props) => (
-  <div>
+  <div className="album-list">
   <h2>Album</h2>
     {props.pics.map(pic => 
       <AlbumEntry pic={pic}/>

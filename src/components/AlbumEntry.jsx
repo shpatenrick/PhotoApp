@@ -1,5 +1,5 @@
 var AlbumEntry = (props) => (
-  <div>{props.pic.title}</div>
+  <div className="album-list-entry-title">{props.pic.title}</div>
 );
 
 AlbumEntry.propTypes = {

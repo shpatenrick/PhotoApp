@@ -7,13 +7,17 @@ class App extends React.Component {
     }
   }
 
+  changePicture (photo) {
+    this.setState({displayPhoto: photo});
+  }
+
   render() {
     return (
       <div>
-        <div className='list-left'>
+        <div className='col-md-7'>
           <Album pics={this.state.AlbumList}/>
         </div>
-        <div className='imageDisp'>
+        <div className='col-md-5'>
           <ImageInfo image={this.state.displayPhoto}/>
           <ImageRating rating={this.state.displayPhoto.rating} />
         </div>
